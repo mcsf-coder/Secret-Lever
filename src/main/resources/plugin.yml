@@ -1,0 +1,20 @@
+name: SecretLever
+version: '1.0'
+main: org.secretlever.secretLever.SecretLever
+api-version: '26.3'
+commands:
+  secretlever:
+    description: Toggle 1 block in your hand into a hidden Secret Lever or configure default access
+    aliases: [sl]
+    usage: /secretlever [default <enable|disable>]
+  secretdoor:
+    description: Toggle 1 block in your hand into a hidden Secret Door or configure default access
+    aliases: [sd]
+    usage: /secretdoor [default <enable|disable>]
+permissions:
+  secretlever.admin:
+    description: Allows toggling default player access for /sl and /sd
+    default: op
+  secretlever.vip:
+    description: Allows using /sl and /sd even when default player access is disabled
+    default: op
